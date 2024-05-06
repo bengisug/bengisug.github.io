@@ -113,8 +113,7 @@
   <body data-new-gr-c-s-check-loaded="14.991.0" data-gr-ext-installed="">
     <br>
     <center>
-    <span style="font-size:42px">Evaluating Generalization and Transfer Capacity of Multi-Agent Reinforcement
-        Learning Across Variable Number of Agents</span>
+    <span style="font-size:42px">IQ-Flow: Mechanism Design for Inducing Cooperative Behavior to Self-Interested Agents in Sequential Social Dilemmas</span>
     </center>
 
     
@@ -124,6 +123,11 @@
         <td align="center" width="100px">
         <center>
         <span style="font-size:20px">Bengisu Guresti</sup></span>
+        </center>
+        </td>
+        <td align="center" width="100px">
+        <center>
+        <span style="font-size:20px">Abdullah Vanlioglu</sup></span>
         </center>
         </td>
         <td align="center" width="100px">
@@ -142,36 +146,28 @@
                 <br>
              <center><h1>Abstract</h1></center><table align="center" width="900px">
                 <br><br>
-                <div align="justify">Multi-agent Reinforcement Learning (MARL) problems often 
-                    require cooperation among agents in order to solve a task. Centralization 
-                    and decentralization are two approaches used for cooperation in MARL. 
-                    While fully decentralized methods are prone to converge to suboptimal 
-                    solutions due to partial observability and nonstationarity, the methods 
-                    involving centralization suffer from scalability limitations and lazy agent 
-                    problem. Centralized training decentralized execution paradigm brings out 
-                    the best of these two approaches; however, centralized training still has 
-                    an upper limit of scalability not only for acquired coordination performance 
-                    but also for model size and training time. In this work, we adopt the 
-                    centralized training with decentralized execution paradigm and investigate 
-                    the generalization and transfer capacity of the trained models across variable 
-                    number of agents. This capacity is assessed by training variable number of 
-                    agents in a specific MARL problem and then performing greedy evaluations with
-                     variable number of agents for each training configuration. Thus, we analyze
-                      the evaluation performance for each combination of agent count for training
-                       versus evaluation. We perform experimental evaluations on predator prey and
-                        traffic junction environments and demonstrate that it is possible to obtain
-                         similar or higher evaluation performance by training with less agents. 
-                         We conclude that optimal number of agents to perform training may differ
-                          from the target number of agents and argue that transfer across large 
-                          number of agents can be a more efficient solution to scaling up than directly 
-                          increasing number of agents during training.</div>
+                <div align="justify">
+                    Achieving and maintaining cooperation between agents to accomplish a common objective 
+                    is one of the central goals of Multi-Agent Reinforcement Learning (MARL). 
+                    Nevertheless in many real-world scenarios, separately trained and specialized agents 
+                    are deployed into a shared environment, or the environment requires multiple objectives 
+                    to be achieved by different coexisting parties. These vari- ations among specialties and 
+                    objectives are likely to cause mixed motives that eventually result in a social dilemma where 
+                    all the parties are at a loss. In order to resolve this issue, we propose the Incentive Q-Flow (IQ-Flow) 
+                    algorithm, which modifies the system’s reward setup with an incentive regulator agent such that the 
+                    cooperative policy also corresponds to the self-interested policy for the agents. Unlike the existing 
+                    methods that learn to incentivize self-interested agents, IQ-Flow does not make any assumptions about 
+                    agents’ policies or learning algorithms, which enables the generalization of the developed framework to 
+                    a wider array of ap- plications. IQ-Flow performs an offline evaluation of the optimality of the learned 
+                    policies using the data provided by other agents to de- termine cooperative and self-interested policies. 
+                    Next, IQ-Flow uses meta-gradient learning to estimate how policy evaluation changes according to given 
+                    incentives and modifies the incentive such that the greedy policy for cooperative objective and self-interested 
+                    objective yield the same actions. We present the operational characteristics of IQ-Flow in Iterated Matrix Games. 
+                    We demonstrate that IQ-Flow outperforms the state-of-the-art incentive design al- gorithm in Escape Room and 
+                    2-Player Cleanup environments. We further demonstrate that the pretrained IQ-Flow mechanism significantly 
+                    outperforms the performance of the shared reward setup in the 2-Player Cleanup environment.</div>
                     <br><br>
                 <tbody><tr>
-                    <td width="700px">
-                      <center>
-                          <a href="comarl.png"><img src="comarl.png" height="400px"></a><br>
-                    </center>
-                    </td>
                 </tr>
                     <tr><td width="600px">
                       <center>
@@ -189,7 +185,7 @@
 
           <center><h1>Presentation</h1></center>
           <center> 
-            <iframe id="fred" style="border:1px solid #666CCC" title="COMARL" src="comarl_presentation.pdf" frameborder="1" scrolling="auto" height="800" width="1000" ></iframe>
+            <iframe id="fred" style="border:1px solid #666CCC" title="aamas_presentation" src="aamas_presentation.pdf" frameborder="1" scrolling="auto" height="800" width="1000" ></iframe>
 
         </center>
         <br><br>
@@ -201,8 +197,7 @@
                     <td>
                       <left>
                 <center><h1>Acknowledgements</h1></center>
-                This work is supported by the Scientific Research Project
-Unit (BAP) of Istanbul Technical University, Project Number: MOA-2019-42321. This webpage template was borrowed from <a href="https://richzhang.github.io/colorization/">colorful folks</a>.
+                This webpage template was borrowed from <a href="https://richzhang.github.io/colorization/">colorful folks</a>.
             </left>
         </td>
         </tr>
